@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_20" android:layout_marginRight="@dimen/margin_12" android:text="@string/category" app:fontFamily="@font/iran_sans_medium" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:id="@id/tvDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_12" android:text="@string/page_category_description" />
+    <include android:id="@id/noticeView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_12" layout="@layout/item_notice_with_icon" />
+    <com.nazdika.app.ui.SearchBoxView android:id="@id/searchBoxView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginStart="@dimen/margin_12" android:layout_marginEnd="@dimen/margin_12" app:sbv_hint="@string/search_in_all_categories" />
+    <View android:id="@id/sSearchBox" android:layout_marginTop="@dimen/margin_8" style="@style/Separator" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.nazdika.app.view.NazdikaLoadingBar android:id="@id/loadingProgress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.nazdika.app.view.EmptyView android:id="@id/emptyView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvSearchResult" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

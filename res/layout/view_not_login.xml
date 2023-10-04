@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="56.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/ic_user_account_icon_secondary_24dp_old" style="@style/Bazaar.Image.Toolbar" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_primary" android:gravity="center" android:id="@id/forceLoginViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bazaarpay_default_margin_triple" android:layout_marginTop="@dimen/bazaarpay_default_margin_double" android:layout_marginRight="@dimen/bazaarpay_default_margin_triple" android:text="@string/bazaarpay_title_force_login" style="@style/Bazaar.Text.Body1" />
+    <ir.cafebazaar.bazaarpay.widget.button.BazaarPayButton android:id="@id/loginButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bazaarpay_default_margin_double" app:bazaarpayButtonTheme="contained" app:bazaarpayButtonType="app" app:text="@string/bazaarpay_login" />
+</merge>

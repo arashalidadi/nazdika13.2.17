@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_width="@dimen/dialogOptionPadding" android:layout_height="fill_parent" />
+    <RadioButton android:theme="@style/RadioButtonTheme" android:id="@id/rb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

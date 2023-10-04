@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/actionBar" android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" android:elevation="@dimen/actionBarElevation">
+        <TextView android:textSize="@dimen/actionBarTitle" android:textColor="@color/primaryText" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instagramPhotos" android:layout_toLeftOf="@id/btnBack" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btnBack" android:background="@color/transparent" android:layout_width="@dimen/actionBarHeight" android:layout_height="@dimen/actionBarHeight" android:src="@drawable/ic_arrow_right_new" android:layout_alignParentRight="true" app:tint="@color/secondaryIcon" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/listEmptyView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/noPosts" android:layout_centerHorizontal="true" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionBar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingTop="5.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+</RelativeLayout>

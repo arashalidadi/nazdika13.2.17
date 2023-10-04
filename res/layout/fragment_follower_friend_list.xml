@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/root" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="simple_with_back_icon" app:nab_title="@string/friendRequests" />
+    <RelativeLayout android:layout_gravity="top" android:id="@id/actionBarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <com.nazdika.app.view.TabView android:id="@id/leftTab" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.nazdika.app.view.TabView android:id="@id/rightTab" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/pagerStrip" />
+        <com.nazdika.app.ui.PagerSlidingTabStrip android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/pagerStrip" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/secondaryIcon" app:pstsIndicatorHeight="2.0dip" app:pstsShouldExpand="true" app:pstsTabBackground="@drawable/btn_action_dark_background" app:pstsTabPaddingLeftRight="@dimen/margin" app:pstsUnderlineColor="@android:color/transparent" />
+    </RelativeLayout>
+    <com.nazdika.app.ui.CustomViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

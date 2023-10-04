@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/actionBarHeightBig" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/list" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.nazdika.app.view.RefreshLayout>
+    <TextView android:textColor="@color/secondaryText" android:gravity="center" android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/actionBarPlusMargin" />
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="simple_with_back_icon" app:nab_title="@string/friendRequests" />
+</RelativeLayout>

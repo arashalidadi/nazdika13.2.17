@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/sendLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footerRoot" android:layout_alignWithParentIfMissing="true" android:elevation="8.0dip">
+        <FrameLayout android:id="@id/replyRoot" android:background="#fffafafa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_gravity="right" android:id="@id/replyIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/img_share" android:scaleType="centerInside" android:tint="@color/tertiaryIcon" />
+            <TextView android:textSize="@dimen/textSizeSmall" android:textColor="@color/blue" android:layout_gravity="center|right|top" android:id="@id/replyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" />
+            <TextView android:textSize="@dimen/textSizeSmall" android:layout_gravity="bottom|center|right" android:id="@id/replyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:singleLine="true" />
+            <ImageButton android:id="@id/btnReplyClose" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_clear_white" android:elevation="8.0dip" />
+        </FrameLayout>
+        <View android:id="@id/separator" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/sendLayout" android:layout_alignWithParentIfMissing="true" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/solid_black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/btnRotateLeft" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="40.0dip" android:layout_height="50.0dip" android:src="@drawable/img_rotate_left_white" />
+        <ImageButton android:id="@id/btnRotateRight" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="40.0dip" android:layout_height="50.0dip" android:src="@drawable/img_rotate_right_white" />
+        <ImageButton android:id="@id/btnCrop" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="40.0dip" android:layout_height="50.0dip" android:src="@drawable/img_crop_white" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btnCancel" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="40.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_clear_white" />
+        <ImageButton android:id="@id/btnDone" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="40.0dip" android:layout_height="50.0dip" android:src="@drawable/img_done_white" />
+        <ProgressBar android:id="@id/progress" android:padding="7.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <com.nazdika.app.view.CropImageView android:id="@id/cropImageView" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" custom:scv_background_color="@color/solid_black" custom:scv_crop_mode="free" custom:scv_frame_color="@color/primary" custom:scv_guide_color="@color/primary" custom:scv_handle_color="@color/primary" custom:scv_handle_size="8.0dip" custom:scv_touch_padding="10.0dip" />
+    <LinearLayout android:gravity="bottom" android:id="@id/captionLayout" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+        <ImageButton android:id="@id/btnEmojies" android:background="@drawable/btn_nazdika_background_rect" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/emoji" android:scaleType="center" android:tint="@color/secondaryIcon" />
+        <com.nazdika.app.ui.MyEditText android:textSize="@dimen/textSizeNormal" android:textColorHint="@color/tertiaryText" android:gravity="center_vertical" android:id="@id/input" android:background="@android:color/transparent" android:paddingLeft="@dimen/inputSuggestPadding" android:paddingRight="@dimen/inputSuggestPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/inputSuggestMargin" android:layout_marginRight="@dimen/inputSuggestMargin" android:minHeight="45.0dip" android:hint="@string/writeYourCaption" android:lines="4" android:minLines="1" android:layout_weight="1.0" android:dropDownWidth="fill_parent" android:dropDownAnchor="@id/captionLayout" style="@style/EditTextStyle" />
+        <ImageButton android:layout_gravity="bottom" android:id="@id/btnSend" android:background="@drawable/btn_pv_send" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/img_send_comment" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/footerRoot" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="216.0dip" android:layout_alignParentBottom="true" android:elevation="8.0dip">
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.telegram.ui.Components.EmojiView android:id="@id/emojies" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

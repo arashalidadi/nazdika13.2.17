@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/changeAccountBox" android:background="@drawable/shape_gray_round_radius_small" android:padding="@dimen/bazaarpay_default_margin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/bazaarpay_default_margin_double"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="centerCrop" android:tint="@color/bazaarpay_grey_90" android:layout_marginEnd="@dimen/bazaarpay_default_margin_one_half" app:srcCompat="@drawable/ic_profile" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_primary" android:id="@id/userAccountPhone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Bazaar.Text.Body1" />
+    <Space android:layout_width="@dimen/bazaarpay_default_margin_double" android:layout_height="0.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/changeAccountAction" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_app_brand_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bazaarpay_change_account" style="@style/Bazaar.Text.Subtitle2" />
+        <ir.cafebazaar.bazaarpay.widget.RTLImageView android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerCrop" android:tint="@color/bazaarpay_app_brand_primary" android:layout_marginStart="@dimen/bazaarpay_default_margin_half" app:srcCompat="@drawable/ic_chevron_right" />
+    </LinearLayout>
+</LinearLayout>

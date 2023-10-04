@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" android:layout_alignParentTop="true" app:nab_mode="simple_with_back_icon" app:nab_title="@string/make_new_page" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nazdikaActionBar" />
+</RelativeLayout>

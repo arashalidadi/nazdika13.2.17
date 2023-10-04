@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginStart="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/crisp_white_regular" android:gravity="center" android:id="@id/crisp_text_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_image_operator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

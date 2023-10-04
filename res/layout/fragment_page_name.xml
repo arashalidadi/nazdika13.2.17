@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pagePadding" android:layout_marginTop="@dimen/pagePadding" android:layout_marginRight="@dimen/pagePadding" android:weightSum="3.0">
+        <View android:layout_width="0.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" style="@style/PageIndicator" />
+        <View android:layout_width="0.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" style="@style/PageIndicator" />
+        <View android:layout_width="0.0dip" android:layout_marginLeft="4.0dip" android:layout_weight="1.0" style="@style/PageIndicator.Slected" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.nazdika.app.view.NazdikaInput android:id="@id/niPageName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pagePadding" android:layout_marginTop="70.0dip" android:layout_marginRight="@dimen/pagePadding" />
+    <View android:id="@id/vBackground" android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="@dimen/margin_60" android:layout_alignParentBottom="true" />
+    <com.nazdika.app.view.SubmitButtonView android:gravity="center" android:id="@id/btNext" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/pagePadding" android:layout_marginBottom="@dimen/pagePadding" android:text="@string/next" android:layout_alignParentBottom="true" style="@style/PrimaryButton.Medium" />
+    <View android:id="@id/vSeparator" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/vBackground" />
+</RelativeLayout>

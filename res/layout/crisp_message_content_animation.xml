@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/crisp_message_content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_image_message" android:layout_width="180.0dip" android:layout_height="100.0dip" android:scaleType="centerCrop" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:src="@drawable/crisp_giphy_attr" android:layout_marginStart="12.0dip" />
+</FrameLayout>

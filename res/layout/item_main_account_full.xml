@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/border_thin_no_background" android:layout_marginStart="@dimen/margin_6" android:layout_marginEnd="@dimen/margin_6" app:cardCornerRadius="@dimen/radius" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/containerData" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.nazdika.app.ui.ReportedAccountView android:id="@id/vReportedAccount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.cardview.widget.CardView>

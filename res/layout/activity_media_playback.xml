@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/solid_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/mediaContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/videoProgress" android:background="@drawable/ic_loader" android:visibility="gone" android:layout_width="@dimen/size_48" android:layout_height="@dimen/size_48" />
+        <com.nazdika.app.view.ProgressiveImageView android:layout_gravity="center" android:id="@id/postPhoto" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </FrameLayout>
+</FrameLayout>

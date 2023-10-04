@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" app:srcCompat="@drawable/ic_point_16dp" />
+    <ir.cafebazaar.bazaarpay.widget.LocalAwareTextView android:textColor="@color/bazaarpay_text_secondary" android:id="@id/pointDescriptionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bazaarpay_default_margin_half" android:layout_marginRight="@dimen/bazaarpay_default_margin_half" android:layout_weight="1.0" android:textAlignment="viewStart" style="@style/Bazaar.Text.Caption" />
+</merge>

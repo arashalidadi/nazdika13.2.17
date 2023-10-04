@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nazdika.app.view.soccer.BannerBackgroundView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cvBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginRight="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_12" android:foreground="@drawable/background_rounded_corner_card_border" app:cardBackgroundColor="@color/surfaceBg" app:cardCornerRadius="@dimen/radius" app:cardElevation="0.0dip" app:strokeColor="@color/border" app:strokeWidth="@dimen/stroke_width">
+        <com.nazdika.app.view.ProgressiveImageView android:id="@id/imgBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/primaryText" android:gravity="right" android:layout_gravity="center|right" android:id="@id/tvText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_16" />
+    </androidx.cardview.widget.CardView>
+    <View android:background="@color/with_border_separator" android:layout_width="fill_parent" android:layout_height="@dimen/divider_3" />
+</com.nazdika.app.view.soccer.BannerBackgroundView>

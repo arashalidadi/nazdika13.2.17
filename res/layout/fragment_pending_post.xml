@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="simple_with_back_icon" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/cvContent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.nazdika.app.view.SubmitButtonView android:id="@id/btnReadRules" android:layout_width="fill_parent" android:layout_margin="@dimen/margin_12" style="@style/PrimaryButton.Large" />
+    </FrameLayout>
+</LinearLayout>

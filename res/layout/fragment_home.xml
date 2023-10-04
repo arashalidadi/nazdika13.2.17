@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/adContainerViewStub">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvList" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+    <com.nazdika.app.view.EmptyView android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/adContainerViewStub" android:layout_alignParentBottom="true" />
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/actionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="home" />
+    <ViewStub android:id="@id/adContainerViewStub" android:visibility="gone" android:layout="@layout/layout_ad_container" android:inflatedId="@id/adContainerViewStub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/actionBar" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivLoading" style="@style/DotLoadingStyle" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fabNewPost" android:background="@color/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin" android:layout_marginBottom="@dimen/margin" android:tint="@color/onPrimaryIcon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin" android:layout_marginEnd="@dimen/margin" android:backgroundTint="@color/primary" app:borderWidth="0.0dip" app:elevation="0.0dip" app:maxImageSize="@dimen/size_24" app:srcCompat="@drawable/ic_edit_filled" />
+</RelativeLayout>

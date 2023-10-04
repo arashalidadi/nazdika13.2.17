@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/bottomLimit" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.6" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/topLimit" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.13" />
+    <FrameLayout android:id="@id/actionBarContainer" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="left" android:id="@id/btnDone" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="12.0dip" app:srcCompat="@drawable/ic_done_gray" app:tint="@color/secondaryIcon" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="left" android:id="@id/btnCut" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="12.0dip" app:srcCompat="@drawable/ic_cut" app:tint="@color/secondaryIcon" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/btnCancel" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="12.0dip" app:srcCompat="@drawable/ic_cross" app:tint="@color/cancelIcon" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/videoContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottomLimit" app:layout_constraintTop_toBottomOf="@id/topLimit">
+        <com.devbrackets.android.exomedia.ui.widget.VideoView android:layout_gravity="center" android:id="@id/video_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:useTextureViewBacking="true" />
+    </FrameLayout>
+    <com.nazdika.app.view.SubmitButtonView android:layout_gravity="bottom" android:id="@id/btnConfirm" android:layout_width="wrap_content" android:layout_margin="16.0dip" android:text="@string/accept" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/PrimaryButton.Medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/editLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:animateLayoutChanges="true" app:layout_constraintTop_toBottomOf="@id/videoContainer">
+        <org.telegram.ui.Components.VideoSeekBarView android:id="@id/video_seekbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+        <org.telegram.ui.Components.VideoTimelineView android:id="@id/video_timeline_view" android:layout_width="fill_parent" android:layout_height="74.0dip" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/layerOneBg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="-10.0dip" android:layout_marginRight="17.0dip" android:weightSum="2.0">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/secondaryText" android:gravity="left" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ss" android:layout_weight="1.0" android:fontFamily="@font/iran_sans_bold" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/secondaryText" android:gravity="right" android:id="@id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ss" android:layout_weight="1.0" android:fontFamily="@font/iran_sans_bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

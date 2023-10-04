@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.view.EmptyView android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.nazdika.app.view.NazdikaLoadingBar android:gravity="center" android:layout_gravity="center" android:id="@id/loadingProgress" android:layout_width="@dimen/loadingBarSize" android:layout_height="@dimen/loadingBarSize" app:size="@dimen/loadingBarSize" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/marginHalf" android:layout_marginTop="@dimen/marginHalf" android:layout_marginRight="@dimen/marginHalf">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="vertical" android:id="@id/suggestionsRvList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+</FrameLayout>

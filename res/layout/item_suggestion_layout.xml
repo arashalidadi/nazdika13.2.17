@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/suggestionRoot" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:id="@id/tvSuggestion" android:padding="@dimen/margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggestedUsers" app:fontFamily="@font/iran_sans_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvSuggestion" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/tvSuggestion" />
+    <View android:id="@id/vDivider" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="@dimen/marginDouble" app:layout_constraintTop_toBottomOf="@id/rvSuggestion" />
+    <View android:id="@id/vBottomDivider" android:background="@drawable/chat_request_title_divider" android:layout_width="fill_parent" android:layout_height="5.0dip" app:layout_constraintTop_toBottomOf="@id/vDivider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

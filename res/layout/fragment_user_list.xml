@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="simple_with_back_icon" />
+    <com.nazdika.app.view.EmptyView android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nazdikaActionBar" />
+    <com.nazdika.app.view.NazdikaLoadingBar android:id="@id/loadingProgress" android:visibility="visible" android:layout_width="@dimen/loadingBarSize" android:layout_height="@dimen/loadingBarSize" android:layout_centerInParent="true" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nazdikaActionBar">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="vertical" android:id="@id/rvList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+</RelativeLayout>

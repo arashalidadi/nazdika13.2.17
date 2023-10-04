@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/actionbar" android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageButton android:id="@id/btnBack" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:tint="@color/secondaryIcon" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_arrow_right_new" style="@style/ActionButton" />
+        <TextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/medias" android:fontFamily="@font/medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btnBack" app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btnBack" app:layout_constraintTop_toTopOf="parent">
+            <com.jaredrummler.materialspinner.MaterialSpinner android:id="@id/mediaTypePicker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:ms_arrow_tint="@color/secondaryIcon" app:ms_background_color="@color/layerTwoBg" app:ms_text_color="@color/primaryText" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View style="@style/ActionBarShadow" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/actionbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

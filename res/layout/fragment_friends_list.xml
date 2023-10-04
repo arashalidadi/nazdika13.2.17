@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="0.0dip" android:layout_height="@dimen/actionBarHeightBig" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:nab_mode="simple_with_back_icon" app:nab_title="@string/friendRequests" />
+    <com.nazdika.app.view.NazdikaLoadingBar android:gravity="center" android:layout_gravity="center" android:id="@id/loadingProgress" android:visibility="gone" android:layout_width="@dimen/loadingBarSize" android:layout_height="@dimen/loadingBarSize" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rvList" android:paddingTop="@dimen/margin_8" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.nazdika.app.view.EmptyView android:id="@id/emptyView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.nazdika.app.view.RefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainContainer" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/galleryImageList" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/topContainer" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.jaredrummler.materialspinner.MaterialSpinner android:id="@id/typeSpinner" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/storyBackgroundList" app:ms_arrow_tint="@color/secondaryIcon" app:ms_background_color="@color/surfaceBg" app:ms_text_color="@color/primaryText" />
+        <Button android:id="@id/openCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="دوربین" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/storyBackgroundList" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/actionBar" android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/closeActivity" android:layout_width="@dimen/actionBarHeight" android:layout_height="@dimen/actionBarHeight" android:src="@drawable/ic_cross" android:tint="@color/secondaryIcon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ActionButton" />
+            <TextView android:textSize="@dimen/default_title_indicator_text_size" android:textColor="@color/primaryText" android:gravity="center" android:id="@id/activityTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/newStory" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" app:layout_constraintEnd_toStartOf="@id/closeActivity" app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/storyBackgroundList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/actionBar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/actionBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@id/waiting" android:background="@color/surfaceBg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topContainer">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

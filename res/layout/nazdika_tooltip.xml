@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tooltipContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/tooltip_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivArrowUp" android:layout_width="@dimen/space_14" android:layout_height="@dimen/space_14" android:src="@drawable/nazdika_tooltip_arrow_up" android:tint="@color/bubble_bg" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bubble_text" android:gravity="center" android:id="@id/tvContent" android:background="@drawable/background_nazdika_tooltip" android:padding="@dimen/space_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/tooltip_width" android:fontFamily="@font/medium" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivArrowBottom" android:visibility="visible" android:layout_width="@dimen/space_14" android:layout_height="@dimen/space_14" android:src="@drawable/nazdika_tooltip_arrow_up" android:tint="@color/bubble_bg" android:translationX="-2.0dip" android:rotation="180.0" />
+</LinearLayout>

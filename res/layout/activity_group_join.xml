@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/surfaceBg" android:paddingLeft="16.0dip" android:paddingTop="30.0dip" android:paddingRight="16.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.view.SimpleLoadingView android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dataRoot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.nazdika.app.view.ProgressiveImageView android:id="@id/photo" android:layout_width="80.0dip" android:layout_height="80.0dip" app:placeholderImage="@drawable/empty_circle_group" />
+        <TextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <TextView android:textSize="@dimen/textSizeSmall" android:textColor="@color/primaryText" android:id="@id/membersCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/gold" android:id="@id/promotedNotice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/promotedGroupNotice" />
+        <TextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:gravity="center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/willBeAddedAfterReview" android:maxLines="3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:textSize="@dimen/textSizeLarge" android:textColor="@color/primary" android:id="@id/btnCancel" android:background="@drawable/btn_background_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:minHeight="40.0dip" android:text="@string/bikhial" />
+        <Button android:textSize="@dimen/textSizeLarge" android:textColor="@color/onPrimaryText" android:id="@id/btnJoin" android:background="@drawable/btn_background_primary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:minWidth="120.0dip" android:minHeight="40.0dip" android:text="@string/join" />
+    </LinearLayout>
+</LinearLayout>

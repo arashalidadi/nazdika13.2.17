@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="0.0dip" android:layout_height="@dimen/actionBarHeightBig" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:nab_mode="simple_with_back_icon" app:nab_title="@string/editProfile" />
+    <ScrollView android:id="@id/svContent" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/images" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin" android:layout_marginTop="@dimen/margin" android:layout_marginRight="@dimen/margin">
+                <include android:id="@id/image0" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginRight="@dimen/marginHalf" android:layout_marginEnd="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toStartOf="@id/image2" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image2" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guideline" app:layout_constraintTop_toBottomOf="@id/image1" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image1" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/guideline" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image3" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" android:layout_marginRight="@dimen/marginHalf" android:layout_marginEnd="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toStartOf="@id/image4" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image0" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image4" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" android:layout_marginRight="@dimen/marginHalf" android:layout_marginEnd="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toStartOf="@id/image5" app:layout_constraintStart_toEndOf="@id/image3" app:layout_constraintTop_toBottomOf="@id/image0" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image5" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/image4" app:layout_constraintTop_toBottomOf="@id/image0" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image6" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" android:layout_marginRight="@dimen/marginHalf" android:layout_marginEnd="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toStartOf="@id/image7" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image3" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image7" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" android:layout_marginEnd="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toStartOf="@id/image8" app:layout_constraintStart_toEndOf="@id/image6" app:layout_constraintTop_toBottomOf="@id/image3" layout="@layout/item_edit_profile_image" />
+                <include android:id="@id/image8" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/marginHalf" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/image7" app:layout_constraintTop_toBottomOf="@id/image3" layout="@layout/item_edit_profile_image" />
+                <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="5.0dip" app:layout_constraintGuide_percent="0.678" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.nazdika.app.view.SubmitButtonView android:id="@id/btnAddImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin" android:layout_marginStart="@dimen/margin" android:layout_marginEnd="@dimen/margin" style="@style/PrimaryButton.Large" />
+            <View android:layout_marginTop="@dimen/margin" style="@style/Separator" />
+            <com.nazdika.app.ui.ProgressiveStatusView android:id="@id/vProgressiveStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/basicInfoCard" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/dividerSuspendedNotice" android:background="@color/separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.nazdika.app.ui.SuspendedNoticeView android:id="@id/vSuspendedNotice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView android:text="@string/user_data" style="@style/EditProfileTitle" />
+                <include layout="@layout/item_edit_profile_card" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/aboutMeLabel" android:text="@string/about_me" style="@style/EditProfileTitle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/aboutMeCard" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_edit_profile_card" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/bioLabel" android:text="@string/bio" style="@style/EditProfileTitle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bioCard" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_edit_profile_card" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/hobbiesLabel" android:text="@string/interests" style="@style/EditProfileTitle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/hobbiesCard" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/item_edit_profile_card" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

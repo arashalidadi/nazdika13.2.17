@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SearchView android:theme="@style/Crisp.Widget.SearchView" android:gravity="center_horizontal" android:id="@id/crisp_search_gifs" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginBottom="16.0dip" app:iconifiedByDefault="false" app:queryHint="@string/crisp_chat_chat_pickers_gif_search" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/crisp_chat_mediaselection_gifselection_noresultstext" android:layout_gravity="center" android:id="@id/crisp_text_gifs_noresults" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_chat_chat_pickers_gif_no_results" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/crisp_recycler_gifs" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+    </FrameLayout>
+</LinearLayout>

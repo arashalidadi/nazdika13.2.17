@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/bazaarpay_default_margin_quadruple" android:paddingRight="@dimen/bazaarpay_default_margin_quadruple" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/bazaarpay_default_margin_quadruple"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/image" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_primary" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bazaarpay_default_margin" style="@style/Bazaar.Text.Headline1" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_primary" android:gravity="center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bazaarpay_default_margin" style="@style/Bazaar.Text.Body2" />
+</LinearLayout>

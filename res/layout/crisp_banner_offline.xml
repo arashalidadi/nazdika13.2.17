@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/crisp_chat_banner_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="32.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_banner_offline_icon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/crisp_chat_banner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_chat_chat_offline_main" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/crisp_chat_banner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/crisp_chat_chat_offline_label" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/crisp_separator_banner_offline" android:background="@color/crisp_theme_blue_shade600" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

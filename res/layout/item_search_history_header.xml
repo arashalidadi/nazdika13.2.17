@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surfaceBg" android:paddingLeft="@dimen/margin_12" android:paddingTop="@dimen/margin_12" android:paddingRight="@dimen/margin_12" android:paddingBottom="@dimen/margin_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recentSearches" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontFamily="@font/medium" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/alert" android:id="@id/tvClearAll" android:padding="@dimen/margin_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear" app:fontFamily="@font/medium" />
+</RelativeLayout>

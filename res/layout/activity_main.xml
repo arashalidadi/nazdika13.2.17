@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragmentContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/mainBottomBar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/mainBottomBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/layout_bottom_bar" />
+    <ImageView android:id="@id/ivSeparator" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/shadowHeight" android:src="@drawable/header_shadow_reverse" android:scaleType="fitXY" app:layout_constraintBottom_toTopOf="@id/mainBottomBar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/lockContainerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NazdikaFragmentContainerView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

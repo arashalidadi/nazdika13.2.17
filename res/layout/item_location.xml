@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivDelete" android:layout_width="@dimen/size_20" android:layout_height="@dimen/size_20" app:srcCompat="@drawable/ic_cross" app:tint="@color/cancelIcon" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:ellipsize="end" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/tvPlaceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" app:fontFamily="@font/iran_sans_light" />
+</androidx.appcompat.widget.LinearLayoutCompat>

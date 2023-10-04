@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/crisp_chat_overlay_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/crisp_gallery_pager_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="end|center|top" android:id="@id/crisp_gallery_zoom" android:background="@color/crisp_chat_imagegallery_button_normal_background" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/crisp_slideshow_zoom" android:scaleType="center" android:layout_marginEnd="16.0dip" />
+    <FrameLayout android:id="@id/crisp_gallery_controls" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="start" android:id="@id/crisp_gallery_previous" android:background="@color/crisp_chat_imagegallery_button_normal_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/crisp_slideshow_previous" android:scaleType="center" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/crisp_gallery_download" android:background="@color/crisp_chat_imagegallery_button_normal_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/crisp_slideshow_download" android:scaleType="center" />
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/crisp_gallery_close" android:background="@color/crisp_chat_imagegallery_button_normal_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/crisp_slideshow_close" android:scaleType="center" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="end" android:id="@id/crisp_gallery_next" android:background="@color/crisp_chat_imagegallery_button_normal_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/crisp_slideshow_next" android:scaleType="center" />
+    </FrameLayout>
+</FrameLayout>

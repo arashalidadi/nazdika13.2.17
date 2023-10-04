@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="0.0dip" android:layout_height="@dimen/actionBarHeightBig" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:nab_mode="profile_self" />
+    <com.nazdika.app.view.NazdikaLoadingBar android:id="@id/clProgress" android:layout_width="@dimen/loadingBarSize" android:layout_height="@dimen/loadingBarSize" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar" />
+    <com.nazdika.app.view.EmptyView android:orientation="vertical" android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/profileRv" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

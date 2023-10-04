@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.CustomViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/actionBarHeight" />
+    <RelativeLayout android:layout_gravity="top" android:id="@id/actionBarContainer" android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <com.nazdika.app.view.TabView android:id="@id/friendsTab" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.nazdika.app.view.TabView android:id="@id/radarTab" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.nazdika.app.view.TabView android:id="@id/suggestionsTab" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.nazdika.app.view.TabView android:id="@id/contactsTab" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.nazdika.app.ui.PagerSlidingTabStrip android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/pagerStrip" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/secondaryIcon" app:pstsIndicatorHeight="2.0dip" app:pstsTabBackground="@drawable/btn_action_dark_background" app:pstsTabPaddingLeftRight="@dimen/margin" app:pstsUnderlineColor="@android:color/transparent" />
+    </RelativeLayout>
+    <View android:layout_marginTop="@dimen/actionBarHeight" style="@style/ActionBarShadow" />
+</FrameLayout>

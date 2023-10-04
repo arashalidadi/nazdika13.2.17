@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@color/layerThreeBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:text="@string/home_location" android:layout_marginStart="@dimen/margin_12" android:layout_marginEnd="@dimen/margin_12" app:fontFamily="@font/iran_sans_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/chHideLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16" android:layout_marginEnd="@dimen/margin_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/locationContainerView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/chHideLocation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/border" android:background="@color/primary" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/separator" android:dividerHeight="1.0px" android:layout_below="@id/border" />
+    <TextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:gravity="center" android:id="@id/title" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight" android:text="عنوان" android:layout_below="@id/border" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerList" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="@dimen/actionBarHeight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primary" android:gravity="center" android:layout_gravity="bottom|center|left" android:id="@id/close" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/actionBarHeight" android:text="@string/ok" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="explore" />
+    <ViewStub android:id="@id/adContainerViewStub" android:visibility="gone" android:layout="@layout/layout_ad_container" android:inflatedId="@id/adContainerViewStub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nazdikaActionBar" />
+    <com.nazdika.app.view.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/adContainerViewStub" app:nsrl_customBar="true" app:nsrl_mode="circle_dot" app:nsrl_offsetTop="120">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvList" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.nazdika.app.view.RefreshLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivLoading" style="@style/DotLoadingStyle" />
+    <com.nazdika.app.view.EmptyView android:id="@id/emptyView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nazdikaActionBar" />
+</RelativeLayout>

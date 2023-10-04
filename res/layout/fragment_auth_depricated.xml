@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surfaceBg" android:paddingBottom="@dimen/authContainerBottomMargin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/notice" android:paddingLeft="@dimen/marginDouble" android:paddingTop="@dimen/authContainerTopMargin" android:paddingRight="@dimen/marginDouble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deprecatedNotice" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/btnUpdate" android:background="@drawable/btn_background_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wideButtonsMinWidth" android:text="@string/update" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/PrimaryButton" />
+</RelativeLayout>

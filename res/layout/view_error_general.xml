@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:layout_width="@dimen/bazaarpay_central_image_size" android:layout_height="@dimen/bazaarpay_central_image_size" app:srcCompat="@drawable/ic_error_outline_icon_primary_24dp_old" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_primary" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bazaarpay_default_margin_triple" android:text="@string/bazaarpay_error_server_connection_failure" style="@style/Bazaar.Text.Body1" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/retryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bazaarpay_default_margin_triple" android:text="@string/bazaarpay_try_again" style="@style/Bazaar.Button.Flat.Primary.SmallText" />
+</merge>

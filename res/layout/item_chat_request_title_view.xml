@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/topDivider" android:background="@drawable/chat_request_title_divider" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/titleRoot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/moreMenu" android:background="@color/transparent" android:padding="@dimen/marginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin" android:src="@drawable/ic_more_vert_filled" android:rotation="90.0" app:tint="@color/secondaryIcon" />
+        <TextView android:textColor="@color/primaryText" android:id="@id/title" android:padding="@dimen/margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chatRequestsTitle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/moreRoot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin" android:src="@drawable/img_arrow_down" app:tint="@color/secondaryIcon" />
+        <TextView android:textColor="@color/primaryText" android:id="@id/moreTitle" android:paddingTop="@dimen/margin" android:paddingRight="@dimen/margin" android:paddingBottom="@dimen/margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chatRequestsTitle" />
+    </LinearLayout>
+    <View android:id="@id/bottomDivider" android:background="@drawable/chat_request_title_divider" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</LinearLayout>

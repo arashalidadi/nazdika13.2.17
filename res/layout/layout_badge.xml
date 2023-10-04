@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flNotificationBadgeRoot" android:background="@drawable/badge_active" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="@dimen/size_16" android:minWidth="@dimen/size_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/countBadgeTextSize" android:textColor="@color/onBadgeText" android:layout_gravity="center_horizontal" android:id="@id/tvNotificationCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_4" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/margin_4" android:fontFamily="@font/iran_sans_light" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:paddingTop="@dimen/margin_20" android:paddingBottom="@dimen/margin_20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.view.NazdikaLoadingBar android:id="@id/pbLoading" android:layout_width="@dimen/loadingBarSize" android:layout_height="@dimen/loadingBarSize" android:layout_centerInParent="true" app:size="@dimen/loadingBarSize" />
+</RelativeLayout>

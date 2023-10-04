@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/curved_background_tag_border" android:padding="@dimen/margin_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:id="@id/tvNotice" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_12" android:text="@string/suggestionsNotice" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIcon" android:layout_width="@dimen/small_icon_size" android:layout_height="@dimen/small_icon_size" app:srcCompat="@drawable/ic_cross" app:tint="@color/cancelIcon" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/secondaryText" android:id="@id/tvAction" android:padding="@dimen/margin_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4" android:text="@string/understand2" android:fontFamily="@font/medium" />
+</LinearLayout>

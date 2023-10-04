@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="simple_with_back_icon" app:nab_shadowDisable="true" app:nab_title="@string/supportAndFaq" />
+    <View android:id="@id/vUpSeparator" style="@style/Separator" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/tertiaryText" android:id="@id/tvNotice" android:background="@color/textCardBg" android:paddingLeft="@dimen/margin_12" android:paddingTop="@dimen/margin_12" android:paddingRight="@dimen/margin_12" android:paddingBottom="@dimen/margin_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chooseYourProblem" android:fontFamily="@font/medium" />
+    <View android:id="@id/vDownSeparator" style="@style/Separator" />
+    <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/llContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/llReport" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/vSeparator1" android:background="@color/with_border_separator_border" style="@style/Separator" />
+                <View android:id="@id/vSeparator2" android:background="@color/with_border_separator" style="@style/Separator" />
+                <View android:id="@id/vSeparator3" android:background="@color/with_border_separator_border" style="@style/Separator" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/primaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_16" android:layout_marginRight="@dimen/margin_12" android:text="@string/reportCustomTechnicalProblem" />
+                <com.nazdika.app.view.NazdikaInput android:id="@id/inputProblemReport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_20" android:layout_marginRight="@dimen/margin_12" app:label="@string/reportProblem" />
+                <View android:id="@id/vSendSeparator" android:background="@color/separator" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_8" />
+                <com.nazdika.app.view.SubmitButtonView android:layout_gravity="left" android:id="@id/btnSubmit" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_8" android:layout_marginRight="@dimen/margin_12" android:layout_marginBottom="@dimen/margin_8" style="@style/PrimaryButton.Medium" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>

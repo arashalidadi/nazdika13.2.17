@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivBackground" android:background="@drawable/linear_progressbar_background_solid" android:layout_width="fill_parent" android:layout_height="@dimen/height_linear_progressbar" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivBorder" android:background="@drawable/linear_progressbar_background_border" android:layout_width="fill_parent" android:layout_height="@dimen/height_linear_progressbar" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/ivFiller" android:background="@drawable/linear_progressbar_filler" android:layout_width="100.0dip" android:layout_height="@dimen/height_linear_progressbar" />
+</merge>

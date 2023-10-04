@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/emptyViewRoot" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="spread" app:tint="@color/secondaryIcon" />
+        <TextView android:textSize="@dimen/textSizeLarge" android:id="@id/chatsEmptyViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/noChatsYet" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/imageView2" style="@style/EmptyViewTextStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:id="@id/loadingRoot" android:background="@color/surfaceBg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.nazdika.app.view.NazdikaLoadingBar android:layout_gravity="center" android:id="@id/loadingProgress" android:paddingTop="@dimen/actionBarHeight" android:visibility="visible" android:layout_width="@dimen/pulsatorSize" android:layout_height="@dimen/pulsatorSize" app:loadingColor="@color/tertiaryIcon" />
+    </LinearLayout>
+</FrameLayout>

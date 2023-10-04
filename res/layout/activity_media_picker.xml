@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mediaContentList" android:paddingBottom="@dimen/actionBarHeight" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/editorContainer" android:background="@color/mediaLoadingBg" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="0.0dip" android:layout_height="@dimen/actionBarHeightBig" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:nab_mode="media_picker" />
+        <com.nazdika.app.view.ImageEditorView android:id="@id/imageEdit" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar" />
+        <com.nazdika.app.view.VideoEditorView android:id="@id/videoEdit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintTop_toBottomOf="@id/nazdikaActionBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bottomBar" android:background="@color/layerTwoBg" android:layout_width="fill_parent" android:layout_height="52.0dip" app:layout_constraintBottom_toBottomOf="parent">
+        <com.nazdika.app.view.SubmitButtonView android:id="@id/nextStep" android:layout_width="100.0dip" android:layout_marginLeft="@dimen/margin" android:text="@string/accept" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PrimaryButton.Medium" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/camera" android:layout_width="@dimen/size_24" android:layout_height="@dimen/size_24" android:layout_marginRight="12.0dip" android:tint="@color/secondaryIcon" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_camera_4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@id/loading" android:background="@color/surfaceBg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="240.0dip">
+        <TextView android:textColor="@color/primaryText" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/referralNotice" />
+        <com.nazdika.app.view.SimpleLoadingView android:id="@id/loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:textSize="@dimen/textSizeNormal" android:textColor="@color/onPrimaryText" android:layout_gravity="center" android:id="@id/btnShare" android:background="@drawable/btn_background_primary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:minHeight="40.0dip" android:text="@string/share" />
+    </LinearLayout>
+</ScrollView>

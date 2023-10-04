@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/crisp_message_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/crisp_message_status_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_message_error" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/crisp_chat_bubble_status_error" android:id="@id/crisp_message_status_error_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_chat_chat_message_error_retry" android:layout_marginStart="3.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/crisp_message_status_read" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_message_read" android:baselineAlignBottom="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/crisp_chat_bubble_status_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_chat_chat_message_info_read" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+</FrameLayout>

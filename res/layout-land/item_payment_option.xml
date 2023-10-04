@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingTop="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bazaarpay_default_margin" style="@style/Bazaar.BottomSheet.Round"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/option_root" android:paddingLeft="@dimen/bazaarpay_default_margin_one_half" android:paddingTop="@dimen/bazaarpay_default_margin" android:paddingRight="@dimen/bazaarpay_default_margin_one_half" android:paddingBottom="@dimen/bazaarpay_default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/bazaarpay_default_margin_one_half" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_hint" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Bazaar.Text.Caption" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bazaarpay_text_primary" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Bazaar.Text.Body2" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

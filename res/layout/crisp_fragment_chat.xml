@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/crisp_fragment_chat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <FrameLayout android:id="@id/crisp_fragment_header_placeholder" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/crisp_banner_status_dead" android:visibility="gone" layout="@layout/crisp_banner_status_dead" />
+            <include android:id="@id/crisp_banner_offline" android:visibility="gone" layout="@layout/crisp_banner_offline" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/crisp_fragment_messages_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/crisp_fragment_media_selection_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/crisp_fab_debug" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/crisp_debug" android:contentDescription="@string/crisp_fab_debug" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="bottom" android:id="@id/crisp_alert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" />
+        <FrameLayout android:id="@id/crisp_fragment_compose_placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/crisp_fragment_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

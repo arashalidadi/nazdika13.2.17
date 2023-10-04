@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/animatingPhotoPlaceHolderContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/animatingPhotoPlaceHolder" android:background="@color/white" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="center" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/background" android:background="@color/solid_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/animatingPhotoContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.nazdika.app.view.ProgressiveImageView android:id="@id/animatingPhoto" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.github.chrisbanes.photoview.PhotoView android:id="@id/photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" android:transitionName="photo" />
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    <com.nazdika.app.ui.ShowHideLayout android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/actionBar" android:background="#aa000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig">
+            <ImageButton android:id="@id/btnBack" android:layout_width="@dimen/actionBarHeight" android:layout_height="@dimen/actionBarHeight" android:src="@drawable/ic_arrow_right_new" android:tint="@color/lightIcon" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ActionButton" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/editPhotoRoot" android:background="#aa000000" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@id/btnRemovePhoto" android:background="@drawable/btn_nazdika_background_rect" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_trash2" android:tint="@color/white" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center" android:id="@id/replacePhoto" android:background="@drawable/btn_nazdika_background_rect" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/white" android:id="@id/replacePhotoText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectAgain" />
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_camera_4" android:tint="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/photoPreviewRoot" android:background="#aa000000" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ScrollView android:id="@id/messageRoot" android:fadingEdgeLength="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:requiresFadingEdge="vertical">
+                <TextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/white" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+            <View android:id="@id/separator" android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="7.0dip" android:layout_below="@id/messageRoot" />
+            <com.nazdika.app.view.ProgressiveImageView android:id="@id/userPhoto" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:layout_below="@id/separator" android:layout_alignParentRight="true" />
+            <LinearLayout android:gravity="center|right|top" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_toLeftOf="@id/userPhoto" android:layout_below="@id/separator">
+                <TextView android:textSize="@dimen/textSizeSmall" android:textColor="@color/white" android:id="@id/displayName" android:paddingTop="1.0dip" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="user" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.nazdika.app.ui.ShowHideLayout>
+</RelativeLayout>

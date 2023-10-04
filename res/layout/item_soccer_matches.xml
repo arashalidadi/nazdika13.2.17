@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nazdika.app.view.soccer.BannerBackgroundView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvMatches" android:paddingLeft="@dimen/margin_12" android:paddingRight="@dimen/margin_12" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" android:layout_marginBottom="@dimen/margin_12" />
+    <View android:background="@color/with_border_separator" android:layout_width="fill_parent" android:layout_height="@dimen/divider_3" />
+</com.nazdika.app.view.soccer.BannerBackgroundView>
