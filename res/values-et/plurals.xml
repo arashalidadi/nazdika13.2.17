@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d tundi tagasi</item>
+        <item quantity="one">Tund aega tagasi</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d minutit tagasi</item>
+        <item quantity="one">Minut tagasi</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d tundi</item>
+        <item quantity="one">Tund</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minutit</item>
+        <item quantity="one">Minut</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d uut märguannet</item>
+        <item quantity="one">%d uus märguanne</item>
+    </plurals>
+</resources>

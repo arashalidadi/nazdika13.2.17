@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d કલાકો પહેલા</item>
+        <item quantity="one">એક કલાક પહેલા</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d મીનીટ પહેલા</item>
+        <item quantity="one">એક મિનિટ પહેલા</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d કલાક</item>
+        <item quantity="one">એક કલાક</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d મિનિટ</item>
+        <item quantity="one">એક મિનિટ</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d નવા નોટિફિકેશન</item>
+        <item quantity="one">%d નવું નોટિફિકેશન</item>
+    </plurals>
+</resources>

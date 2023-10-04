@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Antaŭ %1$d horoj</item>
+        <item quantity="one">Antaŭ unu horo</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Antaŭ %1$d minutoj</item>
+        <item quantity="one">Antaŭ unu minuto</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d horoj</item>
+        <item quantity="one">Unu horo</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minutoj</item>
+        <item quantity="one">Unu minuto</item>
+    </plurals>
+</resources>

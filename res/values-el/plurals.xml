@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Πριν από %1$d ώρες</item>
+        <item quantity="one">Πριν από μια ώρα</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Πριν από %1$d λεπτά</item>
+        <item quantity="one">Πριν από ένα λεπτό</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d ώρες</item>
+        <item quantity="one">Μία ώρα</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d λεπτά</item>
+        <item quantity="one">Ένα λεπτό</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+        <item quantity="one">%d νέα ειδοποίηση</item>
+    </plurals>
+</resources>
