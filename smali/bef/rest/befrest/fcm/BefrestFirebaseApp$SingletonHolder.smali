@@ -1,0 +1,50 @@
+.class Lbef/rest/befrest/fcm/BefrestFirebaseApp$SingletonHolder;
+.super Ljava/lang/Object;
+.source "BefrestFirebaseApp.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lbef/rest/befrest/fcm/BefrestFirebaseApp;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "SingletonHolder"
+.end annotation
+
+
+# static fields
+.field private static volatile instance:Lbef/rest/befrest/fcm/BefrestFirebaseApp;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lbef/rest/befrest/fcm/BefrestFirebaseApp;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lbef/rest/befrest/fcm/BefrestFirebaseApp;-><init>(Lbef/rest/befrest/fcm/BefrestFirebaseApp$1;)V
+
+    sput-object v0, Lbef/rest/befrest/fcm/BefrestFirebaseApp$SingletonHolder;->instance:Lbef/rest/befrest/fcm/BefrestFirebaseApp;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$100()Lbef/rest/befrest/fcm/BefrestFirebaseApp;
+    .locals 1
+
+    sget-object v0, Lbef/rest/befrest/fcm/BefrestFirebaseApp$SingletonHolder;->instance:Lbef/rest/befrest/fcm/BefrestFirebaseApp;
+
+    return-object v0
+.end method
