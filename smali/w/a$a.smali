@@ -1,0 +1,81 @@
+.class final Lw/a$a;
+.super Lkotlin/coroutines/jvm/internal/d;
+.source "LazyListState.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lw/a;->a(Lpu/d;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/f;
+    c = "androidx.compose.foundation.lazy.AwaitFirstLayoutModifier"
+    f = "LazyListState.kt"
+    l = {
+        0x1bd
+    }
+    m = "waitForFirstLayout"
+.end annotation
+
+
+# instance fields
+.field d:Ljava/lang/Object;
+
+.field e:Ljava/lang/Object;
+
+.field synthetic f:Ljava/lang/Object;
+
+.field final synthetic g:Lw/a;
+
+.field h:I
+
+
+# direct methods
+.method constructor <init>(Lw/a;Lpu/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/a;",
+            "Lpu/d<",
+            "-",
+            "Lw/a$a;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lw/a$a;->g:Lw/a;
+
+    invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/d;-><init>(Lpu/d;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iput-object p1, p0, Lw/a$a;->f:Ljava/lang/Object;
+
+    iget p1, p0, Lw/a$a;->h:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Lw/a$a;->h:I
+
+    iget-object p1, p0, Lw/a$a;->g:Lw/a;
+
+    invoke-virtual {p1, p0}, Lw/a;->a(Lpu/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
