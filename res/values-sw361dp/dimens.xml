@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="countBadgeTextSize">@dimen/textSizeNormal</item>
+    <dimen name="editor_rotation_margin_right">60.0dip</dimen>
+    <item type="dimen" name="margin_right_notif_count_badge">@dimen/margin_24</item>
+    <item type="dimen" name="margin_top_notif_count_badge">@dimen/margin_12</item>
+    <dimen name="number_badge_margin_right">14.0dip</dimen>
+    <dimen name="page_account_full_online_badge_left_margins">0.0dip</dimen>
+    <dimen name="page_account_online_badge_left_margins">4.0dip</dimen>
+    <dimen name="radius_cv_failed_broadcast">12.0dip</dimen>
+    <dimen name="size_100">116.0dip</dimen>
+    <dimen name="size_16">20.0dip</dimen>
+    <dimen name="size_20">24.0dip</dimen>
+    <dimen name="size_200">228.0dip</dimen>
+    <dimen name="size_24">28.0dip</dimen>
+    <dimen name="size_28">32.0dip</dimen>
+    <dimen name="size_32">40.0dip</dimen>
+    <dimen name="size_40">48.0dip</dimen>
+    <dimen name="size_44">52.0dip</dimen>
+    <dimen name="size_48">56.0dip</dimen>
+    <dimen name="size_56">64.0dip</dimen>
+    <dimen name="size_60">68.0dip</dimen>
+    <dimen name="size_64">72.0dip</dimen>
+    <dimen name="size_80">92.0dip</dimen>
+    <dimen name="size_92">104.0dip</dimen>
+    <dimen name="size_ic_button">24.0dip</dimen>
+    <dimen name="size_ic_button_small">20.0dip</dimen>
+    <dimen name="size_ic_button_tiny">20.0dip</dimen>
+    <dimen name="size_ic_online_badge">12.0dip</dimen>
+    <dimen name="size_ic_red_badge">10.0dip</dimen>
+    <dimen name="suggestion_profile_user_info_threshold">130.0dip</dimen>
+</resources>

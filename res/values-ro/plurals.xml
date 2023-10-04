@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Acum %1$d ore</item>
+        <item quantity="one">Acum o oră</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Acum %1$d minute</item>
+        <item quantity="one">Acum un minut</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d ore</item>
+        <item quantity="one">O oră</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minute</item>
+        <item quantity="one">Un minut</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d de notificări noi</item>
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+    </plurals>
+</resources>

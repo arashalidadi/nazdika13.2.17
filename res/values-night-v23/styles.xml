@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/BaseTheme">
+        <item name="android:statusBarColor">@color/layerTwoBg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Bazaar.Dialog" parent="@style/Theme.Bazaar">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.Bazaar.Primary" parent="@style/Theme.V23.Bazaar.Primary" />
+    <style name="Theme.V23.Bazaar.Primary" parent="@style/Theme.Bazaar">
+        <item name="android:colorPrimaryDark">@color/bazaarpay_grey_20</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

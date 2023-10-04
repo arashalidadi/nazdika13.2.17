@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Pred %1$d hodinami</item>
+        <item quantity="one">Pred hodinou</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Pred %1$d minútami</item>
+        <item quantity="one">Pred minútou</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d hodín</item>
+        <item quantity="one">Hodina</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minút</item>
+        <item quantity="one">Minúta</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nových upozornení</item>
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+    </plurals>
+</resources>

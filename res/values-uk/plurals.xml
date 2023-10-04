@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d годин тому</item>
+        <item quantity="one">Годину тому</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d хвилин тому</item>
+        <item quantity="one">Хвилину тому</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d годин</item>
+        <item quantity="one">Година</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d хвилин</item>
+        <item quantity="one">Хвилина</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового сповіщення</item>
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+    </plurals>
+</resources>

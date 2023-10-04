@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Há %1$d horas</item>
+        <item quantity="one">Há uma hora</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Há %1$d minutos</item>
+        <item quantity="one">Há um minuto</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d horas</item>
+        <item quantity="one">Uma hora</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minutos</item>
+        <item quantity="one">Um minuto</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d ชั่วโมงที่แล้ว</item>
+        <item quantity="one">หนึ่งชั่วโมงที่แล้ว</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d นาทีที่แล้ว</item>
+        <item quantity="one">หนึ่งนาทีที่แล้ว</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d ชั่วโมง</item>
+        <item quantity="one">ชั่วโมง</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d นาที</item>
+        <item quantity="one">นาที</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
+        <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
+    </plurals>
+</resources>
