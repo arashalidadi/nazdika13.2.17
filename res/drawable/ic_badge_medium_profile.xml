@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="28.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="28.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/notificationBadgeBorder" android:pathData="M32,11C32,13.7614 29.7614,16 27,16C24.2386,16 22,13.7614 22,11C22,8.2386 24.2386,6 27,6C29.7614,6 32,8.2386 32,11Z" />
+    <path android:fillColor="@color/badgeBg" android:pathData="M30.5,11C30.5,12.933 28.933,14.5 27,14.5C25.067,14.5 23.5,12.933 23.5,11C23.5,9.067 25.067,7.5 27,7.5C28.933,7.5 30.5,9.067 30.5,11Z" />
+</vector>

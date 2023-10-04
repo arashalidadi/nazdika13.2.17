@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/send_message_time" android:pathData="M18.233,6.869C18.713,6.345 18.678,5.532 18.154,5.052C17.631,4.572 16.818,4.608 16.338,5.131L6.245,16.141L2.195,12.091C1.693,11.589 0.879,11.589 0.377,12.091C-0.126,12.593 -0.126,13.407 0.377,13.909L5.377,18.909C5.625,19.157 5.963,19.293 6.314,19.285C6.664,19.278 6.997,19.127 7.233,18.869L18.233,6.869Z" />
+    <path android:fillColor="@color/send_message_time" android:pathData="M22.52,7.297C22.999,6.774 22.964,5.961 22.441,5.481C21.917,5.001 21.104,5.036 20.624,5.56L9.624,17.56C9.144,18.083 9.18,18.896 9.703,19.376C10.226,19.856 11.04,19.821 11.52,19.297L22.52,7.297Z" />
+</vector>
