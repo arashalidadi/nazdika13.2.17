@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/curve_background_layer_three" android:padding="16.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/primaryText" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/autoLockTitle" app:fontFamily="@font/iran_sans_medium" />
+        <RadioGroup android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_below="@id/tvTitle">
+            <androidx.appcompat.widget.AppCompatRadioButton android:textColor="@color/primaryText" android:id="@id/rb1min" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/after1min" android:paddingVertical="4.0dip" style="@style/PageCategoryRadioButton" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:textColor="@color/primaryText" android:id="@id/rb5min" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/after5min" android:paddingVertical="4.0dip" style="@style/PageCategoryRadioButton" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:textColor="@color/primaryText" android:id="@id/rb30min" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/after30min" android:paddingVertical="4.0dip" style="@style/PageCategoryRadioButton" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:textColor="@color/primaryText" android:id="@id/rb1hour" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/after1hour" android:paddingVertical="4.0dip" style="@style/PageCategoryRadioButton" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:textColor="@color/alert" android:id="@id/rbDisable" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" android:paddingVertical="4.0dip" style="@style/PageCategoryRadioButton" />
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ageDecades">
+        <item>نزدیک به یک قرن</item>
+        <item>نزدیک به یک قرن</item>
+        <item>دهه بیست</item>
+        <item>دهه سی‌</item>
+        <item>دهه چهلی</item>
+        <item>دهه پنجاهی</item>
+        <item>دهه شصتی</item>
+        <item>دهه هفتادی</item>
+        <item>دهه هشتادی</item>
+        <item>دهه نودی</item>
+    </string-array>
+    <string-array name="ageDecadesComma">
+        <item>نزدیک به یک قرن،</item>
+        <item>نزدیک به یک قرن،</item>
+        <item>دهه بیست،</item>
+        <item>دهه سی‌،</item>
+        <item>دهه چهل،</item>
+        <item>دهه پنجاه،</item>
+        <item>دهه شصت،</item>
+        <item>دهه هفتاد،</item>
+        <item>دهه هشتاد،</item>
+        <item>دهه نود،</item>
+    </string-array>
+    <string-array name="ageMonths">
+        <item>فروردینی</item>
+        <item>اردیبهشتی</item>
+        <item>خردادی</item>
+        <item>تیر ماهی</item>
+        <item>مردادی</item>
+        <item>شهریوری</item>
+        <item>مهر ماهی</item>
+        <item>آبان ماهی</item>
+        <item>آذر ماهی</item>
+        <item>دی ماهی</item>
+        <item>بهمن ماهی</item>
+        <item>اسفندی</item>
+    </string-array>
+    <string-array name="crisp_debug_companies">
+        <item>Crisp</item>
+        <item>Google</item>
+    </string-array>
+    <string-array name="crisp_debug_event_colors">
+        <item>black</item>
+        <item>blue</item>
+        <item>brown</item>
+        <item>green</item>
+        <item>grey</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>yellow</item>
+    </string-array>
+    <string-array name="iran_banks">
+        <item>بانک ملی ایران</item>
+        <item>بانک سپه</item>
+        <item>بانک صنعت و معدن</item>
+        <item>بانک کشاورزی</item>
+        <item>بانک مسکن</item>
+        <item>بانک صادرات ایران</item>
+        <item>بانک توسعه تعاون</item>
+        <item>پست بانک ایران</item>
+        <item>بانک پاسارگاد</item>
+        <item>بانک دی</item>
+        <item>بانک شهر</item>
+        <item>بانک ملت</item>
+        <item>بانک سامان</item>
+        <item>بانک سینا</item>
+        <item>بانک پارسیان</item>
+        <item>دیگر</item>
+    </string-array>
+    <string-array name="passwordSuggestion">
+        <item>ترکیبی از حروف انگلیسی کوچک و بزرگ باشه</item>
+        <item>اعداد انگلیسی رو داشته باشه</item>
+        <item>حروف خاص @ , $ , # , &amp; رو داشته باشه</item>
+    </string-array>
+    <array name="password_step_color">
+        <item>@color/alert</item>
+        <item>@color/warning</item>
+        <item>@color/success</item>
+    </array>
+    <string-array name="password_step_text">
+        <item>ضعیف</item>
+        <item>متوسط</item>
+        <item>خوب</item>
+    </string-array>
+</resources>

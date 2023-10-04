@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/crisp_separator_compose" android:background="@color/crisp_theme_blue_shade600" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/crisp_chat_textview_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:minHeight="55.0dip" android:paddingStart="20.0dip" android:paddingEnd="16.0dip">
+        <EditText android:textSize="14.0sp" android:textColor="@color/crisp_chat_textview_text" android:textColorHint="@color/crisp_theme_blue_regular" android:id="@id/crisp_edittext_compose" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/crisp_chat_chat_form_field_message" android:layout_weight="1.0" android:inputType="textMultiLine" android:importantForAutofill="no" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/crisp_button_smiley_add" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/crisp_smiley_add" app:buttonCompat="@drawable/crisp_smiley_add" app:buttonTint="@color/crisp_theme_blue_regular" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/crisp_button_send_noattachment" android:background="@drawable/crisp_send_button_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_send" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/crisp_attachment_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip">
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/crisp_button_attachment_add" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_attachment_add" android:tint="@color/crisp_theme_blue_regular" />
+                <ProgressBar android:id="@id/crisp_progress_attachment" android:background="@drawable/crisp_attachment_progress_background" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:progress="25" android:progressDrawable="@drawable/crisp_attachment_progress_bar" style="?android:progressBarStyleHorizontal" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/crisp_button_send_attachment" android:background="@drawable/crisp_send_button_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_send" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

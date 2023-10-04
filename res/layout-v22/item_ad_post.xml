@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28" android:layout_marginBottom="@dimen/margin_28" android:layout_marginVertical="@dimen/margin_28"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeSmall" android:textColor="@color/tertiaryText" android:id="@id/tvAdTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_12" android:text="@string/advertisement" android:fontFamily="@font/medium" app:layout_constraintBottom_toBottomOf="@id/ivAdvertisement" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/ivAdvertisement" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivAdvertisement" android:layout_width="@dimen/size_20" android:layout_height="@dimen/size_20" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_8" android:tint="@color/tertiaryIcon" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_megaphone" />
+    <View android:id="@id/topSeparator" app:layout_constraintBottom_toTopOf="@id/adContainerInclude" style="@style/MediaSeparator" />
+    <include android:id="@id/adContainerInclude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_8" app:layout_constraintTop_toBottomOf="@id/ivAdvertisement" layout="@layout/layout_ad_container" />
+    <View android:id="@id/bottomSeparator" app:layout_constraintBottom_toBottomOf="@id/adContainerInclude" style="@style/MediaSeparator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

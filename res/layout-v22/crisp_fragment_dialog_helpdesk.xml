@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/crisp_helpdesk_dialog_background" android:paddingTop="40.0dip" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:paddingVertical="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="14.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/crisp_helpdesk_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/crisp_helpdesk_search_close" android:background="@color/crisp_helpdesksearch_backbutton_background" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/crisp_helpdesk_close" android:scaleType="center" android:tint="@color/crisp_helpdesksearch_backbutton_icon" />
+            <FrameLayout android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginStart="16.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/crisp_helpdesk_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crisp_helpdesk_search" android:tint="@color/crisp_helpdesksearch_textfield_icon" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_helpdesk_search_loader" android:background="@color/crisp_theme_blue_regular" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/crisp_helpdesk_loader" android:scaleType="center" android:tint="@color/crisp_helpdesksearch_textfield_activityindicatoricon" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/crisp_helpdesksearch_textfield_suggestion" android:gravity="center_vertical" android:id="@id/crisp_helpdesk_search_suggest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="14.0sp" android:textColorHint="@color/crisp_helpdesksearch_textfield_suggestion" android:gravity="center_vertical" android:id="@id/crisp_helpdesk_search_field" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/crisp_chat_chat_welcome_helpdesk" android:singleLine="true" android:imeOptions="actionSearch" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/crisp_helpdesk_article_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="start" android:id="@id/crisp_helpdesk_article_back" android:background="@color/crisp_helpdesksearch_backbutton_background" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/crisp_helpdesk_close" android:scaleType="center" android:tint="@color/crisp_helpdesksearch_backbutton_icon" />
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="end" android:id="@id/crisp_helpdesk_article_open" android:background="@color/crisp_theme_blue_regular" android:layout_width="34.0dip" android:layout_height="30.0dip" android:src="@drawable/crisp_helpdesk_open" android:scaleType="center" />
+        </FrameLayout>
+    </FrameLayout>
+    <View android:background="@color/crisp_helpdesksearch_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/crisp_helpdesk_search_results" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold|italic" android:textColor="@color/crisp_helpdesksearch_row_text" android:gravity="center" android:id="@id/crisp_helpdesk_search_noresult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="54.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="54.0dip" android:layout_marginBottom="28.0dip" android:text="@string/crisp_helpdesk_noresults" android:layout_weight="1.0" android:layout_marginHorizontal="54.0dip" android:layout_marginVertical="28.0dip" />
+    <FrameLayout android:id="@id/crisp_helpdesk_article" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <WebView android:id="@id/crisp_helpdesk_article_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/crisp_helpdesk_article_progress" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:indeterminateOnly="true" style="?android:progressBarStyle" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/crisp_helpdesk_bottombar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/crisp_helpdesksearch_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="16.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/crisp_helpdesk_bottombar_icon" android:layout_width="wrap_content" android:layout_height="12.0dip" android:src="@drawable/crisp_helpdesk_open" android:scaleType="fitXY" android:tint="@color/crisp_theme_blue_regular" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/crisp_theme_blue_regular" android:id="@id/crisp_helpdesk_bottombar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crisp_helpdesk_open" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

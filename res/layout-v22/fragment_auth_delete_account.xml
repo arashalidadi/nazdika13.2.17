@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/surfaceBg" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nazdika.app.ui.NazdikaActionBar android:id="@id/nazdikaActionBar" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeightBig" app:nab_mode="simple_with_back_icon" app:nab_title="@string/deleteAccount" />
+    <View android:id="@id/vUpSeparator" style="@style/Separator" />
+    <TextView android:textSize="@dimen/textSizeNormal" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/deleteAccountNotice" />
+    <com.nazdika.app.view.NazdikaInput android:id="@id/inputReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="30.0dip" android:layout_marginHorizontal="30.0dip" />
+    <Button android:textSize="@dimen/textSizeLarge" android:textColor="@color/onPrimaryText" android:id="@id/btnDelete" android:background="@drawable/btn_background_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip" android:minWidth="@dimen/size_200" android:text="@string/disable" />
+    <Button android:textSize="@dimen/textSizeLarge" android:textColor="@color/primary" android:id="@id/btnCancel" android:background="@drawable/btn_background_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/size_200" android:text="@string/cancel" />
+</LinearLayout>

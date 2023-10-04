@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/attentionBadge" android:layout_marginRight="3.0dip" style="@style/AttentionBadgeStyle" />
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/countBadge" android:layout_marginRight="3.0dip" style="@style/CounterBadgeStyle" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivIcon" android:layout_width="@dimen/tab_icon_size" android:layout_height="@dimen/tab_icon_size" android:layout_marginLeft="@dimen/tab_icon_margin" android:layout_marginRight="@dimen/tab_icon_margin" android:maxHeight="@dimen/actionBarHeight" android:tint="@color/secondaryIcon" android:layout_marginHorizontal="@dimen/tab_icon_margin" app:srcCompat="@drawable/ic_users_filled" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primary" android:gravity="center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/messages" app:fontFamily="@font/iran_sans_medium" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/vSelectIndicator" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</merge>

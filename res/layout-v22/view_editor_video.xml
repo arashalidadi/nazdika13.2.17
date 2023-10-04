@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/surfaceBg" android:clickable="true" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/videoContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextureView android:layout_gravity="center" android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/playButton" android:layout_width="55.0dip" android:layout_height="55.0dip" app:srcCompat="@drawable/ic_play_circle_twotone" />
+        <ImageView android:id="@id/videoPlaceHolder" android:background="@color/mediaLoadingBg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <org.telegram.ui.Components.VideoSeekBarView android:id="@id/videoSeekbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+        <org.telegram.ui.Components.VideoTimelineView android:id="@id/videoTimelineView" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="12.0dip" android:weightSum="2.0" android:layout_marginHorizontal="17.0dip">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/tertiaryText" android:gravity="left" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ss" android:layout_weight="1.0" android:fontFamily="@font/iran_sans_bold" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/tertiaryText" android:gravity="right" android:id="@id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ss" android:layout_weight="1.0" android:fontFamily="@font/iran_sans_bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cannotEditFile" android:background="@drawable/background_uneditable_video_notice" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true" android:layout_marginHorizontal="20.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="@dimen/textSizeNormal" android:textColor="@color/alert" android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/errorProcessVideo" android:fontFamily="@font/iran_sans_medium" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" app:srcCompat="@drawable/ic_alert_circle" app:tint="@color/alert" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/textSizeSmall" android:textColor="@color/primaryText" android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="12.0dip" android:text="@string/uploadWithoutEditing" android:fontFamily="@font/iran_sans_light" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivLoading" android:visibility="gone" android:layout_centerInParent="true" style="@style/DotLoadingStyle" />
+</RelativeLayout>

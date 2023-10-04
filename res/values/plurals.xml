@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="bazaarpay_seconds">
+        <item quantity="other">%d ثانیه</item>
+        <item quantity="one">%d ثانیه</item>
+    </plurals>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d hours ago</item>
+        <item quantity="one">An hour ago</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d minutes ago</item>
+        <item quantity="one">A minute ago</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d hours</item>
+        <item quantity="one">An hour</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minutes</item>
+        <item quantity="one">A minute</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+</resources>

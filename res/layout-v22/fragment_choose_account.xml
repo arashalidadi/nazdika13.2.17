@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/surfaceBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/textSizeLarge" android:textColor="@color/primaryText" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_marginTop="@dimen/margin_32" android:layout_marginRight="@dimen/margin_12" android:text="@string/whichAccount" android:fontFamily="@font/medium" android:layout_marginHorizontal="@dimen/margin_12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvList" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/margin_32" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

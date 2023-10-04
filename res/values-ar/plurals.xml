@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">قبل %1$d ساعات</item>
+        <item quantity="one">قبل ساعة</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">قبل %1$d دقيقة</item>
+        <item quantity="one">قبل دقيقة</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d ساعات</item>
+        <item quantity="one">ساعة</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d دقائق</item>
+        <item quantity="one">دقيقة</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+</resources>

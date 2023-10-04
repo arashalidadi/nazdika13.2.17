@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/crisp_background_media_selection" android:background="@color/crisp_chat_overlay_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/crisp_chat_mediaselection_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/crisp_separator_media_selection" android:background="@color/crisp_theme_blue_shade600" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="10.0dip">
+            <androidx.appcompat.widget.AppCompatCheckBox android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/crisp_mediaselection_checkbox_text" android:id="@id/crisp_checkbox_smileys" android:background="@color/crisp_theme_blue_regular" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/crisp_chat_chat_pickers_selector_smileys" android:paddingHorizontal="12.0dip" app:buttonCompat="@null" />
+            <androidx.appcompat.widget.AppCompatCheckBox android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/crisp_mediaselection_checkbox_text" android:id="@id/crisp_checkbox_gifs" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/crisp_chat_chat_pickers_selector_gifs" android:paddingHorizontal="12.0dip" app:buttonCompat="@null" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginHorizontal="16.0dip">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/crisp_fragment_smileys_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+            <FrameLayout android:id="@id/crisp_fragment_gifs_placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
