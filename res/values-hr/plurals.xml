@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">prije %1$d sata</item>
+        <item quantity="one">Prije sat vremena</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">prije %1$d minuta</item>
+        <item quantity="one">Prije 1 minutu</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d sati</item>
+        <item quantity="one">sat</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minuta</item>
+        <item quantity="one">minuta</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obavijesti</item>
+        <item quantity="one">%d nova obavijest</item>
+        <item quantity="few">%d nove obavijesti</item>
+    </plurals>
+</resources>

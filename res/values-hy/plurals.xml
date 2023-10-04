@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d ժամ առաջ</item>
+        <item quantity="one">1 ժամ առաջ</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d րոպե առաջ</item>
+        <item quantity="one">1 րոպե առաջ</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d ժամ</item>
+        <item quantity="one">Ժամ</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d րոպե</item>
+        <item quantity="one">Րոպե</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d նոր ծանուցում</item>
+        <item quantity="one">%d նոր ծանուցում</item>
+    </plurals>
+</resources>

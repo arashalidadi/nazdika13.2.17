@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d საათის წინ</item>
+        <item quantity="one">ერთი საათის წინ</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d წუთის წინ</item>
+        <item quantity="one">ერთი წუთის წინ</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d საათი</item>
+        <item quantity="one">საათი</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d წუთი</item>
+        <item quantity="one">წუთი</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d ახალი შეტყობინება</item>
+        <item quantity="one">%d ახალი შეტყობინება</item>
+    </plurals>
+</resources>

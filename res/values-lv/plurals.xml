@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Pirms %1$d stundām</item>
+        <item quantity="one">Pirms stundas</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Pirms %1$d minūtēm</item>
+        <item quantity="one">Pirms minūtes</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d stundas</item>
+        <item quantity="one">Stunda</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minūtes</item>
+        <item quantity="one">Minūte</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d jauni paziņojumi</item>
+        <item quantity="zero">%d jaunu paziņojumu</item>
+        <item quantity="one">%d jauns paziņojums</item>
+    </plurals>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="authContainerBottomMargin">30.0dip</dimen>
+    <dimen name="authContainerTopMargin">30.0dip</dimen>
+    <dimen name="noPostMargin">13.0dip</dimen>
+    <dimen name="noPostText">15.0sp</dimen>
+</resources>

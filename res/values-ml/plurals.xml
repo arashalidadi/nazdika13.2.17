@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">മണിക്കൂറുകൾക്ക് മുമ്പ്</item>
+        <item quantity="one">ഒരു മണിക്കൂർ മുമ്പ്</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">മിനിറ്റുകൾക്ക് മുൻപ്</item>
+        <item quantity="one">ഒരു മിനിറ്റ് മുമ്പ്</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">മണിക്കൂറുകൾ</item>
+        <item quantity="one">ഒരു മണിക്കൂർ</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">മിനുട്ടുകൾ</item>
+        <item quantity="one">ഒരു മിനുട്ട്</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d പുതിയ അറിയിപ്പുകൾ</item>
+        <item quantity="one">%d പുതിയ അറിയിപ്പ്</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d jam yang lalu</item>
+        <item quantity="one">Sejam yang lalu</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d minit yang lalu</item>
+        <item quantity="one">Seminit yang lalu</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d jam</item>
+        <item quantity="one">Sejam</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minit</item>
+        <item quantity="one">Seminit</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d pemberitahuan baharu</item>
+        <item quantity="one">%d pemberitahuan baharu</item>
+    </plurals>
+</resources>

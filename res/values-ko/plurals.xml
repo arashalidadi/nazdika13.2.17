@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d 시간 전</item>
+        <item quantity="one">1시간 전</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d 분 전</item>
+        <item quantity="one">1분 전</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d 시간</item>
+        <item quantity="one">1시간</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d 분</item>
+        <item quantity="one">1분</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">새 알림 %d개</item>
+        <item quantity="one">새 알림 %d개</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Fyrir %1$d klukkustundum</item>
+        <item quantity="one">Fyrir klukkustund</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Fyrir %1$d mínútum</item>
+        <item quantity="one">Fyrir um mínútu</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d klukkustundir</item>
+        <item quantity="one">Klukkustund</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d Mínútum</item>
+        <item quantity="one">Mínúta</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nýjar tilkynningar</item>
+        <item quantity="one">%d ný tilkynning</item>
+    </plurals>
+</resources>

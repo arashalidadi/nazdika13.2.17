@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d órája</item>
+        <item quantity="one">Egy órája</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d perce</item>
+        <item quantity="one">Egy perce</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d óra</item>
+        <item quantity="one">Egy órája</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d perc</item>
+        <item quantity="one">Egy perce</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d új értesítés</item>
+        <item quantity="one">%d új értesítés</item>
+    </plurals>
+</resources>

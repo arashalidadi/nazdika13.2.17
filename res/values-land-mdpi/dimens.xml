@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="noPostMargin">9.0dip</dimen>
+    <dimen name="noPostText">12.0sp</dimen>
+</resources>
