@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d giờ trước</item>
+        <item quantity="one">Một giờ trước</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d phút trước</item>
+        <item quantity="one">Một phút trước</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d giờ</item>
+        <item quantity="one">Một giờ</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d phút</item>
+        <item quantity="one">Một phút</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d thông báo mới</item>
+        <item quantity="one">%d thông báo mới</item>
+    </plurals>
+</resources>
