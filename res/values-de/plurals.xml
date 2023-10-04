@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Vor %1$d Stunden</item>
+        <item quantity="one">Vor einer Stunde</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Vor %1$d Minuten</item>
+        <item quantity="one">Vor einer Minute</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d Stunden</item>
+        <item quantity="one">Einer Stunde</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d Minuten</item>
+        <item quantity="one">Eine Minute</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d neue Benachrichtigungen</item>
+        <item quantity="one">%d neue Benachrichtigung</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">%1$d timer siden</item>
+        <item quantity="one">En time siden</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">%1$d minutter siden</item>
+        <item quantity="one">Et minut siden</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d timer</item>
+        <item quantity="one">En time</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minutter</item>
+        <item quantity="one">Et minut</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nye notifikationer</item>
+        <item quantity="one">%d ny notifikation</item>
+    </plurals>
+</resources>

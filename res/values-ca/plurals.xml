@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Fa %1$d hores</item>
+        <item quantity="one">Fa una hora</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Fa %1$d minuts</item>
+        <item quantity="one">Fa un minut</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d hores</item>
+        <item quantity="one">Una hora</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d minuts</item>
+        <item quantity="one">Un minut</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notificacions noves</item>
+        <item quantity="one">%d notificació nova</item>
+    </plurals>
+</resources>

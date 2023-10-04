@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="crisp_date_hour">
+        <item quantity="other">Преди %1$d часа</item>
+        <item quantity="one">Преди час</item>
+    </plurals>
+    <plurals name="crisp_date_minute">
+        <item quantity="other">Преди %1$d минути</item>
+        <item quantity="one">Преди минута</item>
+    </plurals>
+    <plurals name="crisp_duration_hour">
+        <item quantity="other">%1$d часа</item>
+        <item quantity="one">Един час</item>
+    </plurals>
+    <plurals name="crisp_duration_minute">
+        <item quantity="other">%1$d минути</item>
+        <item quantity="one">Една минута</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нови известия</item>
+        <item quantity="one">%d ново известие</item>
+    </plurals>
+</resources>
