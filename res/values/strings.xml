@@ -780,12 +780,12 @@ Try again now, or later."</string>
     <string name="get">دریافت</string>
     <string name="getYourAnswers">جواب سوالاتت رو از اینجا بگیر</string>
     <string name="gettingLocation">در حال بارگیری</string>
-    <string name="giveFeedback">نظر، پیشنهاد دارم</string>
-    <string name="giveFeedbackCauseYouAreUnhappy">"ناراحتیم که از نزدیکا راضی نیستی
+    <string name="giveFeedback">عضویت روبیکا</string>
+    <string name="giveFeedbackCauseYouAreUnhappy">"آنلاک شه توسط Arash@m
 
  (•︵•) 
 
-اگر پیشنهاد یا انتقادی داری برامون بنویس تا سعی کنیم نزدیکا رو بهتر کنیم"</string>
+با عضویت در کانال جدیدترین ورژن رو دانلود کن "</string>
     <string name="give_access">دسترسی می‌دم</string>
     <string name="google_api_key">AIzaSyBKAE3RWyk1Vafa6huRwp8jqe4aXneO6Pc</string>
     <string name="google_app_id">1:323647647108:android:a9d9b825f9501988a641d1</string>
@@ -1267,17 +1267,17 @@ Try again now, or later."</string>
     <string name="radarSearchAgain">@string/tryAgain</string>
     <string name="range_end">Range end</string>
     <string name="range_start">Range start</string>
-    <string name="rate">امتیاز میدم</string>
+    <string name="rate">عضویت تلگرام</string>
     <string name="rate5start">۵ ستاره میدم</string>
-    <string name="rate5startsCauseYouAreHappy">"خوشحالیم که از نزدیکا راضی هستی!
+    <string name="rate5startsCauseYouAreHappy">"خوشحالیم که از نزدیکای آنلاک راضی هستی!
 
  ♥‿♥ 
-
-با ۵ ستاره ✰✰✰✰✰ از نزدیکا حمایت کن و نظرت رو بنویس"</string>
-    <string name="rateUsCauseYouAreHappy">"خوشحالیم که از نزدیکا راضی هستی!
+با عضویت در کانال جدیدترین ورژن رو دانلود کن 
+ آنلاک شده توسط Arash@m "</string>
+    <string name="rateUsCauseYouAreHappy">"خوشحالیم که از نزدیکای آنلاک راضی هستی!
 
  ♥‿♥ 
-به نزدیکا امتیاز بده و نظرت رو بنویس"</string>
+با عضویت در کانال جدیدترین ورژن رو دانلود کن </string>
     <string name="read_and_accept_conditions_and_rules">شرایط و قوانین را خواندم و قبول می‌کنم.</string>
     <string name="read_nazdika_rules">مطالعه‌ی قوانین نزدیکا</string>
     <string name="read_rules_and_accept">قوانین را خواندم و قبول می‌کنم.</string>

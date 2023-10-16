@@ -3214,7 +3214,7 @@
 
     check-cast p1, Landroid/app/Activity;
 
-    const-string p2, "https://nazdika.com/terms"
+    const-string p2, "https://instagram.com/lalehtaheriii?igshid=MzNlNGNkZWQ4Mg=="
 
     invoke-static {p1, p2}, Ltm/c;->j(Landroid/app/Activity;Ljava/lang/String;)V
 

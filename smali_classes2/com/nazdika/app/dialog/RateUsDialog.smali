@@ -204,17 +204,11 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/h;
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    const-string v2, "RATE"
-
-    const/16 v3, 0x11
-
-    invoke-static {v0, v3, v1, v2}, Lhn/p2;->y(Landroid/content/Context;ILcom/nazdika/app/model/Preference;Ljava/lang/Object;)V
+    invoke-static {v0}, Lhn/g2;->openmyintents(Landroid/app/Activity;)V
 
     :goto_0
     return-void
