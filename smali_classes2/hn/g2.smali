@@ -126,6 +126,183 @@
     return-object v0
 .end method
 
+.method private static telegram(Landroid/content/Context;)Landroid/content/Intent;
+    .locals 3
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.VIEW"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "tg://resolve?domain=sendanymessage"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    const-string p0, "org.telegram.messenger"
+
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    return-object v0
+.end method
+
+.method private static instagram(Landroid/content/Context;)Landroid/content/Intent;
+    .locals 3
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.VIEW"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "https://instagram.com/lalehtaheriii?igshid=MzNlNGNkZWQ4Mg=="
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    const-string p0, "com.instagram.android"
+
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    return-object v0
+.end method
+
+.method private static telegramlink(Landroid/content/Context;)Landroid/content/Intent;
+    .locals 3
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.VIEW"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "https://t.me/sendanymessage"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    return-object v0
+.end method
+
+.method private static showpackage(Landroid/content/Context;)Z
+    .locals 2
+
+    :try_start_0
+    const-string v0, "telegram"
+
+    invoke-static {p0, v0}, Lhn/g2;->whatpackage(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    :try_start_1
+    invoke-static {p0, v0}, Lhn/g2;->whatpackage(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    :goto_0
+    invoke-static {}, Lhn/g2;->m()V
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catch_1
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private static whatpackage(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+    .locals 1
+
+    const-string v0, "telegram"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0}, Lhn/g2;->telegram(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "telegramx"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {p0}, Lhn/g2;->telegramx(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_1
+    const-string v0, "instagram"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    invoke-static {p0}, Lhn/g2;->instagram(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {p0}, Lhn/g2;->telegramlink(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object p0
+
+    :goto_0
+    return-object p0
+.end method
+
 .method private static d(Landroid/content/Context;)Landroid/content/Intent;
     .locals 3
 
@@ -261,7 +438,7 @@
 .method private static g(Landroid/content/Context;)V
     .locals 2
 
-    invoke-static {p0}, Lhn/g2;->h(Landroid/content/Context;)Z
+    invoke-static {p0}, Lhn/g2;->showpackage(Landroid/content/Context;)Z
 
     move-result v0
 
