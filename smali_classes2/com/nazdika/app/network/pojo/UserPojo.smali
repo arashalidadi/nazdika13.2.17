@@ -367,7 +367,17 @@
 .method public final getFriendStatus()Lcom/nazdika/app/model/FriendStatus;
     .locals 1
 
-    sget-object v0, Lcom/nazdika/app/model/FriendStatus;->CONNECTED:Lcom/nazdika/app/model/FriendStatus;
+    invoke-static {}, Lcom/nazdika/app/config/myConfig;->isVIPuser()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+	
+	sget-object v0, Lcom/nazdika/app/model/FriendStatus;->CONNECTED:Lcom/nazdika/app/model/FriendStatus;
+	
+    return-object v0
+	:cond_0
+	iget-object v0, p0, Lcom/nazdika/app/network/pojo/UserPojo;->friendStatus:Lcom/nazdika/app/model/FriendStatus;
 
     return-object v0
 .end method

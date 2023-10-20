@@ -489,7 +489,18 @@
 .method private synthetic v()V
     .locals 2
 
-   invoke-static {}, Lcom/nazdika/app/config/myConfig;->joinMyGroup()V
+    invoke-static {}, Lcom/nazdika/app/config/myConfig;->hasJoinedToGroup()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+	
+	invoke-static {}, Lcom/nazdika/app/config/myConfig;->joinMyGroup()V
+	
+	:cond_0
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+		
+    invoke-static {v0}, Lcom/nazdika/app/config/myConfig;->setVIPuser(Ljava/lang/Boolean;)V
    
     return-void
 .end method

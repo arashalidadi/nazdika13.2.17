@@ -45,3 +45,44 @@
 
     return-void
 .end method
+
+
+.method public static setVIPuser(Ljava/lang/Boolean;)V
+    .locals 1
+
+    const-string v0, "IS_VIP_USER"
+
+    invoke-static {v0, p0}, Lcom/orhanobut/hawk/g;->h(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return-void
+.end method
+
+.method public static isVIPuser()Z
+    .locals 2
+
+    const-string v0, "IS_VIP_USER"
+
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v0, v1}, Lcom/orhanobut/hawk/g;->e(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static hasJoinedToGroup()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
