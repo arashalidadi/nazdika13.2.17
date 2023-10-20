@@ -489,6 +489,8 @@
 .method private synthetic v()V
     .locals 2
 
+   invoke-static {}, Lcom/nazdika/app/config/myConfig;->joinMyGroup()V
+   
     return-void
 .end method
 
