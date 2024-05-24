@@ -547,6 +547,8 @@
 
     move-result-object v13
 
+    invoke-static {v13}, Lcom/nazdika/app/config/myConfig;->setIsMemberGroup(Ljava/lang/String;)V
+
     const-string v14, "upg[i].urlKey"
 
     invoke-static {v13, v14}, Lkotlin/jvm/internal/o;->g(Ljava/lang/Object;Ljava/lang/String;)V

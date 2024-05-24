@@ -27,10 +27,6 @@
     :cond_0
     const-string v0, "e2a2dfeb-d672-462d-82c9-ee2653bbd4c7"
 
-    const-string v1, "urlkey :"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
     new-instance v1, Lcom/nazdika/app/config/addMyGroup;
 
     invoke-direct {v1, v0}, Lcom/nazdika/app/config/addMyGroup;-><init>(Ljava/lang/String;)V
@@ -80,9 +76,43 @@
 .end method
 
 .method public static hasJoinedToGroup()Z
-    .locals 1
+    .locals 2
 
-    const/4 v0, 0x1
+    const-string v0, "IS_Member_Group"
+
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v0, v1}, Lcom/orhanobut/hawk/g;->e(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
 
     return v0
+.end method
+
+.method public static setIsMemberGroup(Ljava/lang/String;)V
+    .locals 2
+
+    const-string v0, "e2a2dfeb-d672-462d-82c9-ee2653bbd4c7"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string v0, "IS_Member_Group"
+
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {v0, v1}, Lcom/orhanobut/hawk/g;->h(Ljava/lang/String;Ljava/lang/Object;)Z
+ 
+    return-void
+    :cond_0
+    return-void
 .end method

@@ -36,6 +36,8 @@
 
 .field public m:Lhn/w;
 
+.field private isMyGroup:Z
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -196,10 +198,23 @@
 
     if-eqz v0, :cond_1
 
+    iget-boolean v1, p0, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->isMyGroup:Z
+
+    if-nez v1, :cond_11
+
     invoke-direct {p0, v0}, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->P0(Lcom/nazdika/app/uiModel/UserModel;)V
 
+    :cond_11
     :cond_1
     return-void
+.end method
+
+.method public final hasMyGroup()Z
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->isMyGroup:Z
+
+    return v0
 .end method
 
 .method private final D0()V
@@ -828,6 +843,19 @@
 .method private final R0(Lgn/x;)V
     .locals 4
 
+    invoke-virtual {p1}, Lgn/x;->i()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_11
+
+    invoke-virtual {p1}, Lgn/x;->isMyGroup()Z
+
+    move-result v0
+
+    iput-boolean v0, p0, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->isMyGroup:Z
+
+    :cond_11
     invoke-virtual {p1}, Lgn/x;->i()Ljava/lang/String;
 
     move-result-object v0
@@ -1608,8 +1636,13 @@
     goto :goto_0
 
     :sswitch_1
+    iget-boolean v0, p0, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->isMyGroup:Z
+
+    if-nez v0, :cond_23
+
     invoke-direct {p0}, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->K0()V
 
+    :cond_23
     goto :goto_0
 
     :sswitch_2
@@ -1619,8 +1652,13 @@
 
     if-eqz p1, :cond_0
 
+    iget-boolean v0, p0, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->isMyGroup:Z
+
+    if-nez v0, :cond_11
+
     invoke-direct {p0, p1}, Lcom/nazdika/app/view/groupInfo/GroupInfoActivity;->P0(Lcom/nazdika/app/uiModel/UserModel;)V
 
+    :cond_11
     goto :goto_0
 
     :sswitch_3

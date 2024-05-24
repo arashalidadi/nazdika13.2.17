@@ -555,7 +555,7 @@
 
     iget-object v0, v0, Lgm/l1;->b:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/nazdika/app/view/groupInfo/p;->w:Lgm/l1;
 

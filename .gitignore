@@ -4,7 +4,7 @@ build/
 dist/
 java_src/
 original/
-
+.vscode/
 # Local configuration file (sdk path, etc)
 local.properties
 
@@ -17,6 +17,7 @@ captures/
 .cxx/
 *.apk
 output.json
+.gitignore
 
 # IntelliJ
 *.iml

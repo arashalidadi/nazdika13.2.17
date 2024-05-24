@@ -942,6 +942,32 @@
     return-object v0
 .end method
 
+.method public final isMyGroup()Z
+    .locals 2
+
+	iget-object v0, p0, Lgn/x;->d:Ljava/lang/String;
+
+    const-string v1, "e2a2dfeb-d672-462d-82c9-ee2653bbd4c7"
+	
+	if-eqz v0, :cond_11
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_11
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public final o()Ljava/util/LinkedHashMap;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
